@@ -1,0 +1,38 @@
+
+
+________________________________________________________________________________________________________________________________
+
+create_token "rolex" "vn1" 5 "GTO" 100000 true
+
+transfer "alice" "initminer" "1.00000 KNOW" "1.00000 W" true
+_____________________________________________________________________________________________
+
+get_account_history beovn1 -1 10
+
+______________________________________________________________________________________________
+
+create_account_with_keys initminer beovn1 "" BEO4yNNRkZerK7tcHDUCf2WSwrtAFrzsHzAForDcY9zqy6yCXj9dT  true 
+
+transfer_to_vesting "initminer" "beovn1" "3000000.00000 BWF" "1.00000 W" true
+
+update_supernode beovn1 BEO6Vctfy5bm3ZVXo4j6WBpfn6S9NcaQW5WQG8Ereav4HwBaPQjcK "0.10000 W" true
+
+vote_for_supernode alice beowulf3 100000 "0.00100 W" true true
+______________________________________________________________________________________________________________________________
+
+create_account rolex chautk "" true  (system tu tao cap key )
+
+
+1. withdraw:
+withdraw_vesting alice "600.00000 M" "0.10000 W" true Annabelle Nguyễn, [10.05.19 10:55]
+1 tuần nó mới giảm 1/26 anh
+26 tuần nó mới giảm hết
+
+
+2. vote:
+
+vote_for_supernode alice alice 200000000000 "1.00000 W" true true
+3. create multisig account:
+
+create_multisig_account "initminer" "orgd" "" ["BEO7txSppJxtcqfsf4uGhxUjGgzipR84hSpME1afcwkHRLSWKsrMX","BEO4v6iN6FZFx8P9Rk2pKfQ5MaanRDeaV8a4DFvW3QrhTq9KpSHf9"] true
+

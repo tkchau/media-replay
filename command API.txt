@@ -1,0 +1,42 @@
+## get block header
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.get_dynamic_global_properties", "params":[], "id":1}' http://127.0.0.1:8376/rpc
+
+## get account
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.lookup_accounts", "params":["a",100], "id":1}' http://127.0.0.1:8376/rpc
+
+## get active supernode
+
+curl -s --data '{"jsonrpc":"2.0", "method": "condenser_api.get_active_supernodes", "params":[], "id":1}' http://127.0.0.1:8376/rpc
+
+## return accont name
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.get_key_references", "params":[["BEO76gwpowfoP75Wgi8faWvbufteavUyK2Fqv1sTmn2VzvXjzQsUb"]], "id":1}' http://127.0.0.1:8376/rpc
+
+## get account
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.get_accounts", "params":[["beowulf"]], "id":1}' http://127.0.0.1:8376/rpc
+
+## get supernode account
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.lookup_supernode_accounts", "params":["a",30], "id":1}' http://127.0.0.1:8376/rpc
+
+## dem pending transaction
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.get_pending_transaction_count", "params":[], "id":1}' http://127.0.0.1:8376/rpc
+
+
+### xem vote
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.get_supernodes_by_vote", "params":[null, 210], "id":1}' https://bw.beowulfchain.com
+
+https://jsoneditoronline.org/
+
+### get version
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.get_version", "params":[], "id":1}' http://127.0.0.1:8376
+
+### get config 
+
+curl -s --data '{"jsonrpc":"2.0", "method":"condenser_api.get_config", "params":[], "id":1}' http://127.0.0.1:8376

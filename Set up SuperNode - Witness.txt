@@ -1,0 +1,19 @@
+Set up SuperNode - Witness
+
+Witnesses play a vital role for Blockchain and it's important that a witness be both trustworthy and reliable.
+
+A trustworthy witness: Other users can trust that the witness isn't trying to game the system for personal gain and wants to support Steem's growth.
+
+A reliable witness: Witness ensures that their server runs smoothly 24 hours everyday
+
+
+?Set up SuperNode - Witness
+Minimum Requirements
+Install Beowulf
+Install the dependencies
+Install the source code repository
+Configure steemd
+Broadcast message to become a witness
+Get votes?
+
+
