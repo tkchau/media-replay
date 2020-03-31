@@ -1,7 +1,7 @@
 
-python API (create account , transfer to another account , swap coin , get free coin)
+python flask restful (create account , transfer to another account , swap coin , get free coin)
 
-ssl + domain + nginx fir API
+ssl + domain + nginx for API
 
 UI simple = Flask python (demo)
 
