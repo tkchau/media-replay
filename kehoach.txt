@@ -1,0 +1,15 @@
+
+python API (create account , transfer to another account , swap coin , get free coin)
+
+ssl + domain + nginx fir API
+
+UI simple = Flask python (demo)
+
+tim doi tac
+
+______________________________________________________________
+kinh doanh BDS
+ chuyen nha
+ cho thue cc hai thanh
+ tim viec lam bat dong san
+ tim mua chung cu ban lai (tu mua + ban)
