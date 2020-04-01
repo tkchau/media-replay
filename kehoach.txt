@@ -13,3 +13,6 @@ kinh doanh BDS
  cho thue cc hai thanh
  tim viec lam bat dong san
  tim mua chung cu ban lai (tu mua + ban)
+
+hyperleger blockchain
+https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperledger-fabric-54ba8a9c461f
