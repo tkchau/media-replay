@@ -8,12 +8,71 @@ UI simple = Flask python (demo)
 tim doi tac
 
 ______________________________________________________________
-kinh doanh BDS
- chuyen nha
- cho thue cc hai thanh
- tim viec lam bat dong san
- tim mua chung cu ban lai (tu mua + ban)
+hyper ledger sawtooth
 
-hyperleger blockchain
+Install – 10%
+Install Sawtooth packages
+Start component services
+Generate keys
+Register validator
+Configure peering
+Verify install and fix if necessary
+Connect transaction processor to validator
+Create genesis block
+Verify system meets hardware requirements
 
-https://medium.com/@kctheservant/demo-of-three-node-two-channel-setup-in-hyperledger-fabric-54ba8a9c461f
+Configuration – 25%
+Configure validator peering and network
+Configure consensus
+Configure logging
+Configure REST API
+Configure layer 3 network ports/firewall
+Configure metrics
+Configure transaction processor endpoint
+Configure systemd services
+Choose parallel / sync scheduler
+Configure storage paths
+Configure Sawtooth CLI
+
+Permissioning, Identity Management, and Security – 20%
+Identify network ID / system / peer ID
+Permission a transaction processor
+Policy management
+Validator registration
+System permissions
+Configure validator local policy file
+Validator key permissioning
+Role management: transactor roles
+Role management: network roles
+Configure transactor permissions
+Secure connections between components
+Use a proxy server to authorize the REST API
+Securing connecting between validators
+Manage validator keys and secrets
+
+Lifecycle – 25%
+Create new network
+Joining an existing network
+Remove validator node from the network
+Rejoin network after network failure
+Restart validator after crash or maintenance
+Restart components after crash or maintenance
+Add new transaction processor
+Changing consensus mode
+Change network configuration
+Update Sawtooth software
+Update transaction processor version
+
+Troubleshooting – 20%
+Troubleshoot network communication
+Troubleshoot REST API
+Troubleshoot consensus
+Troubleshoot transaction processor
+Identify and resolve chain fork
+Fix validator
+Enable Sawtooth monitoring
+Monitor network topology
+Troubleshoot deployment
+Troubleshoot resource constra
+
+
