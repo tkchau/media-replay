@@ -10,6 +10,8 @@ tim doi tac
 ______________________________________________________________
 https://www.leewayhertz.com/project/weesign/
 
+https://discourse.skcript.com/t/hyperledger-sawtooth-series-1-the-basics/1557
+
 http://danlec.com/st4k#questions/tagged/hyperledger-sawtooth
 
 use cases hyper ledger
