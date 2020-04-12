@@ -3,9 +3,15 @@ python flask restful (create account , transfer to another account , swap coin ,
 
 ssl + domain + nginx for API
 
-UI simple = Flask python (demo)
+UI simple = Flask python (demo) payment gateway
 
-tim doi tac
+deploy + monitor blockchain
+
+blockchain for giao dich bat dong san 
+
+blockchain fot digital gift
+
+blockchain for quang cao 
 
 ______________________________________________________________
 https://www.leewayhertz.com/project/weesign/
