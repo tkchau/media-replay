@@ -1,5 +1,0 @@
-center	asia-east1-b	internal-center (10.140.0.9) (nic0)	34.80.2.206 	 	
-devnet-node1	asia-southeast1-b	10.148.0.7 (nic0)	34.87.61.143 	 	
-devnet-node2	asia-east1-b	10.140.0.20 (nic0)	35.194.145.22 
-devnet-node3	asia-northeast1-b	10.146.0.5 (nic0)	34.84.203.96
-devnet-node4	10.148.0.8 (nic0)	34.87.74.207 
