@@ -1,0 +1,5 @@
+https://cloud.google.com/kubernetes-engine/docs/tutorials/migrating-node-pool
+
+https://kubernetes.io/docs/concepts/workloads/pods/disruptions/
+
+db.configurations.updateOne({ _id: ObjectId("5ec240bd6051690ab7590e5a") ,"host" : "127.0.0.1"},{ $set:{ "host" : "10.144.104.18"}});
