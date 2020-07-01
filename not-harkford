@@ -1,0 +1,22 @@
+Các step để revert blockchain tới block thứ N:
+1. Thêm dòng config sau vào file config.hpp
+#define BEOWULF_REVERT_TO_BLOCK_NUM             N
+
+2. Thêm dòng sau vào file get_config.cpp
+result["BEOWULF_REVERT_TO_BLOCK_NUM"] = BEOWULF_REVERT_TO_BLOCK_NUM;
+
+3. Thêm đoạn code sau vào hàm update_last_irreversible_block() (file database.cpp):
+if(new_last_irreversible_block_num > BEOWULF_REVERT_TO_BLOCK_NUM){
+         new_last_irreversible_block_num = BEOWULF_REVERT_TO_BLOCK_NUM;
+}
+Thêm vào ngay sau dòng code:
+uint32_t new_last_irreversible_block_num = wit_objs[offset]->last_confirmed_block_num;
+
+4. Thêm đoạn code sau vào hàm bool p2p_plugin_impl::handle_block( const graphene::net::block_message& blk_msg, bool sync_mode, std::vector<fc::uint160_t>& ) (file p2p_plugin.cpp)
+if(chain.db().last_non_undoable_block_num() == BEOWULF_REVERT_TO_BLOCK_NUM) {
+              exit(EXIT_SUCCESS);
+}
+Thêm vào ngay trước dòng code:
+bool result = chain.accept_block(blk_msg.block, sync_mode,
+                               (block_producer | force_validate) ? chain::database::skip_nothing
+                                                                 : chain::database::skip_transaction_signatures);
