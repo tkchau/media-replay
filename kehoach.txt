@@ -1,7 +1,0 @@
-
-core c++
-
-crypto
-
-bds
-
