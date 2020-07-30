@@ -1,0 +1,67 @@
+ htop
+    2  apt install htop
+    3  apt-get -y install checkinstall build-essential software-properties-common git libssl-dev openssl libpcre3 libpcre3-dev zlib1g zlib1g-dbg zlib1g-dev
+    4  wget http://nginx.org/download/nginx-1.14.2.tar.gz
+    5  tar -xzvf nginx-1.14.2.tar.gz
+    6  wget https://github.com/arut/nginx-rtmp-module/archive/v1.2.1.tar.gz
+    7  tar -xzvf v1.2.1.tar.gz
+    8  wget ftp://ftp.csx.cam.ac.uk/pub/software/programming/pcre/pcre-8.41.tar.gz
+    9  tar -xzvf pcre-8.41.tar.gz
+   10  wget https://zlib.net/zlib-1.2.11.tar.gz
+   11  tar -xzvf zlib-1.2.11.tar.gz
+   12  cd /home/nghiatc/nginx-1.14.2
+   13  ./configure --add-module=/home/nghiatc/nginx-rtmp-module-1.2.1 --with-pcre=/home/nghiatc/pcre-8.41 --with-zlib=/home/nghiatc/zlib-1.2.11 --with-http_ssl_module --with-http_v2_module --with-file-aio
+   14  make
+   15  make install
+   16  cd ..
+   17  ll
+   18  mkdir -p /usr/local/nginx/conf/conf.d
+   19  vim /usr/local/nginx/conf/nginx.conf
+   20  vim /usr/local/nginx/conf/conf.d/bw.conf
+   22  /usr/local/nginx/sbin/nginx -t
+   23  ps -ef | grep nginx
+   24  ps -ef | grep steem
+   25  htop
+   26  netstat -ntplu
+   27  exit
+   28  ps -ef | grep steemd
+   29  exit
+   30  /home/tkhanhchau/trigger.sh
+   31  service crond reload
+   32  service cron reload
+   33  crontab -l
+   34  ls
+   35  nano post2.py
+   36  nohup python post2.py &
+   37  ps -ef |grep python
+   38  ps -ef |grep beowulfd
+   39  crontab -l
+   40  exit
+   41  crontab -l
+   42  crontab -e
+   43  su tkhanhchau
+   44  exit
+   45  last
+   46  history
+
+nginx load balance
+   
+   upstream beowulf_lb {
+        server 127.0.0.1:8376;
+        server 10.0.0.1:8376;
+        server 10.0.0.2:8376;
+    }
+	
+	server {
+        listen 443;
+
+		location /en/docs/ {
+            proxy_pass http://10.0.0.3:8376;
+        }
+		
+        location / {
+            proxy_pass http://beowulf_lb;
+        }
+		
+		
+    }
